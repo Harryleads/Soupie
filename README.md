@@ -1,4 +1,4 @@
-# Soupie - AI-Powered Mental Health Companion
+# Talksoup - AI-Powered Mental Health Companion
 
 A web application that helps users reflect, journal, and understand emotional patterns through natural conversation and guided self-insight.
 
@@ -37,7 +37,7 @@ A web application that helps users reflect, journal, and understand emotional pa
 
 ## AI Features Setup
 
-Soupie includes several AI-powered features that require a Google Gemini API key:
+Talksoup includes several AI-powered features that require a Google Gemini API key:
 
 ### Getting a Gemini API Key
 1. Visit [Google AI Studio](https://aistudio.google.com/)

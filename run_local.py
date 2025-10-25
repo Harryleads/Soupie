@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Local development server for Soupie
+Local development server for Talksoup
 Run this script to start the Flask development server
 """
 
@@ -19,7 +19,7 @@ os.chdir(project_root)
 if __name__ == '__main__':
     try:
         from api.app import app
-        print("Starting Soupie development server...")
+        print("Starting Talksoup development server...")
         print("Server will be available at: http://localhost:5000")
         print("Auto-reload enabled for development")
         print("Press Ctrl+C to stop the server")

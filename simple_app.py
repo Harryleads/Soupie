@@ -384,11 +384,11 @@ try:
             if not journal or journal.get('user_id') != user_id:
                 return jsonify({'error': 'Journal entry not found'}), 404
             
-            # Generate "What Soupie thinks" - personal analysis with actionable steps
+            # Generate "What Talksoup thinks" - personal analysis with actionable steps
             journal_content = journal.get('content')
             emotional_analysis = analyze_journal_emotions(journal_content)
             
-            prompt = f"""You are Soupie, an emotionally intelligent AI companion. Analyze this journal entry and provide your personal thoughts in this exact format:
+            prompt = f"""You are Talksoup, an emotionally intelligent AI companion. Analyze this journal entry and provide your personal thoughts in this exact format:
 
 Journal entry: "{journal_content}"
 
@@ -1037,14 +1037,14 @@ Your ability to juggle various interests and tasks, from academic to creative, s
             }
 
     def create_ai_system_prompt(user_context, chat_history):
-        """Create a context-aware system prompt for the AI based on the Soupie blueprint"""
+        """Create a context-aware system prompt for the AI based on the Talksoup blueprint"""
         
         # Get user's emotional state and risk profile
         user_emotional_state = get_user_emotional_state(user_context)
         emergency_mode = detect_emergency_indicators(user_context, chat_history)
         
         # Base system role
-        base_prompt = """You are Soupie, an emotionally intelligent AI companion designed to help users reflect on their thoughts, track their emotions, and build psychological resilience — without diagnosing or labeling.
+        base_prompt = """You are Talksoup, an emotionally intelligent AI companion designed to help users reflect on their thoughts, track their emotions, and build psychological resilience — without diagnosing or labeling.
 
 You are inspired by CBT (Cognitive Behavioral Therapy), CPT (Cognitive Processing Therapy), and empathic human conversation.
 
@@ -1316,7 +1316,7 @@ CONVERSATION CONTINUING:
         # Greeting responses based on emotional state
         if any(word in message_lower for word in ['hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening']):
             if user_context['is_new_user']:
-                return "Hello! Welcome to Soupie. I'm here to help you reflect on your thoughts and build emotional resilience. Would you like to explore what's on your mind today?"
+                return "Hello! Welcome to Talksoup. I'm here to help you reflect on your thoughts and build emotional resilience. Would you like to explore what's on your mind today?"
             elif emotional_state['mood'] == 'low':
                 return "Hello! I can sense you might be going through a tough time. I'm here to listen and help you process whatever you're feeling. How are you doing today?"
             elif emotional_state['mood'] == 'anxious':
@@ -1663,7 +1663,7 @@ CONVERSATION CONTINUING:
             }), 500
 
     if __name__ == '__main__':
-        print("Starting Soupie development server...")
+        print("Starting Talksoup development server...")
         print("Server will be available at: http://localhost:5000")
         print("Auto-reload enabled for development")
         print("Press Ctrl+C to stop the server")

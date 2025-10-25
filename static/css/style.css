@@ -1,4 +1,4 @@
-/* Soupie - Mental Health Companion Styling */
+/* Talksoup - Mental Health Companion Styling */
 
 * {
     margin: 0;
@@ -202,7 +202,7 @@ body {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 1.5rem;
     position: relative;
     transition: all 0.3s ease;
     overflow: hidden;
@@ -216,10 +216,16 @@ body {
 
 .journal-card.primary {
     background: linear-gradient(135deg, #ffffff 0%, #f8f6ff 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .journal-card.secondary {
     background: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-tag {
@@ -250,7 +256,7 @@ body {
 .card-description {
     color: var(--text-secondary);
     line-height: 1.5;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
     font-family: 'Inter', sans-serif;
 }
 
@@ -270,18 +276,23 @@ body {
 }
 
 .card-action-btn.primary {
-    background: var(--accent-primary);
+    background: linear-gradient(135deg, #9b7ede 0%, #7c3aed 100%);
     color: white !important;
     box-shadow: 0 4px 12px rgba(155, 126, 222, 0.3);
     text-decoration: none;
 }
 
 .card-action-btn.primary:hover {
-    background: var(--accent-hover);
+    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(155, 126, 222, 0.4);
     color: white !important;
     text-decoration: none;
+}
+
+/* Ensure primary card button aligns with secondary card button */
+.journal-card.primary .card-action-btn {
+    margin-top: auto;
 }
 
 .card-action-btn.secondary {
@@ -293,6 +304,11 @@ body {
 .card-action-btn.secondary:hover {
     background: var(--feature-bubble-hover);
     border-color: var(--accent-primary);
+}
+
+/* Ensure secondary card button aligns with primary card button */
+.journal-card.secondary .card-action-btn {
+    margin-top: auto;
 }
 
 .card-illustration {
@@ -1297,7 +1313,7 @@ body {
     color: #2c3e50;
 }
 
-/* What Soupie thinks styling */
+/* What Talksoup thinks styling */
 .soupie-thoughts {
     background: rgba(108, 92, 231, 0.1);
     padding: 1.5rem;
@@ -6814,7 +6830,7 @@ body {
 .card-description {
     color: #666666;
     font-size: 1rem;
-    margin: 0;
+    margin-bottom: 3.5rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
 }

@@ -1,4 +1,4 @@
--- Soupie Database Schema
+-- Talksoup Database Schema
 -- Run this SQL in your NeonDB PostgreSQL database
 
 -- Enable UUID extension

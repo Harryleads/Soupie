@@ -1,5 +1,5 @@
 """
-JSON-based database system for Soupie
+JSON-based database system for Talksoup
 Replaces SQLAlchemy with simple JSON file storage
 """
 

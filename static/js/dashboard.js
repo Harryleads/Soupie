@@ -63,6 +63,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Update day buttons to show current week and highlight today
         updateDayButtons(now);
+        
+        // Update reflection card based on time of day
+        updateReflectionCard(now);
     }
 
     function updateDayButtons(currentDate) {
@@ -82,6 +85,33 @@ document.addEventListener('DOMContentLoaded', function() {
                 button.classList.add('active');
             }
         });
+    }
+
+    function updateReflectionCard(now) {
+        const hour = now.getHours();
+        const titleElement = document.getElementById('reflectionTitle');
+        const descriptionElement = document.getElementById('reflectionDescription');
+        
+        if (!titleElement || !descriptionElement) return;
+        
+        let title, description;
+        
+        if (hour >= 5 && hour < 12) {
+            // Morning (5 AM - 12 PM)
+            title = 'Morning Reflection';
+            description = 'How are you feeling this morning? Take a moment to set your intentions for the day.';
+        } else if (hour >= 12 && hour < 17) {
+            // Afternoon (12 PM - 5 PM)
+            title = 'Afternoon Check-in';
+            description = 'How is your day going so far? Take a moment to reflect on your progress and feelings.';
+        } else {
+            // Evening (5 PM - 5 AM)
+            title = 'Evening Reflection';
+            description = 'How was your day? Take a moment to reflect on your experiences and emotions.';
+        }
+        
+        titleElement.textContent = title;
+        descriptionElement.textContent = description;
     }
 
     function updateDashboardStats(stats) {
