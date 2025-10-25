@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soupie - Private Journal</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="journal-container">
+        <!-- Perena-Style Navigation -->
+        <div class="perena-nav">
+            <div class="perena-nav-container">
+                <div class="perena-nav-brand">
+                    <a href="/dashboard" class="perena-logo">Soupie</a>
+                </div>
+                <div class="perena-nav-links">
+                    <a href="/dashboard" class="perena-nav-link">Dashboard</a>
+                    <a href="/private-journal" class="perena-nav-link active">Private Journal</a>
+                    <a href="/open-journal" class="perena-nav-link">Community</a>
+                </div>
+                <div class="perena-nav-actions">
+                    <a href="/profile" class="perena-nav-login">
+                        <span>{{ user_first_name }}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Journal Content -->
+        <div class="journal-content">
+            <div class="journal-background">
+                <div class="journal-pattern"></div>
+            </div>
+            
+            <div class="journal-main">
+                <!-- Journal Header -->
+                <div class="journal-header">
+                    <h1 class="journal-title">Private Journal</h1>
+                    <p class="journal-subtitle">Your personal space for reflection and growth</p>
+                </div>
+
+                <!-- New Entry Card -->
+                <div class="journal-card new-entry">
+                    <div class="card-header">
+                        <h2 class="card-title">Write Your Thoughts</h2>
+                        <p class="card-description">Express yourself freely in this safe, private space</p>
+                    </div>
+                    
+                    <form id="journalForm" class="journal-form">
+                        <div class="form-group">
+                            <label for="journalContent" class="form-label">What's on your mind today?</label>
+                            <textarea 
+                                id="journalContent" 
+                                name="content" 
+                                class="journal-textarea" 
+                                placeholder="Write your thoughts, feelings, and experiences here..."
+                                required
+                            ></textarea>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">
+                                <span id="saveText">Save Entry</span>
+                                <span id="saveLoading" class="loading hidden"></span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div id="alertContainer"></div>
+                </div>
+
+                <!-- Journal Entries Card -->
+                <div class="journal-card entries">
+                    <div class="card-header">
+                        <h2 class="card-title">Your Journal Entries</h2>
+                        <p class="card-description">Reflect on your journey through your past entries</p>
+                    </div>
+                    
+                    <div id="journalEntries" class="entries-list">
+                        <div class="loading-state">
+                            <div class="loading-spinner"></div>
+                            <p>Loading your entries...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/private-journal.js"></script>
+    <script src="/static/js/theme.js"></script>
+</body>
+</html>

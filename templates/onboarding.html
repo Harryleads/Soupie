@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soupie - Onboarding</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="perena-onboarding-container">
+        <!-- Perena Navigation -->
+        <nav class="perena-nav">
+            <div class="perena-nav-container">
+                <div class="perena-nav-brand">
+                    <a href="/" class="perena-logo">Soupie</a>
+                </div>
+                <div class="perena-nav-links">
+                    <a href="/" class="perena-nav-link">Home</a>
+                    <a href="#features" class="perena-nav-link">Features</a>
+                    <a href="#about" class="perena-nav-link">About</a>
+                </div>
+                <div class="perena-nav-actions">
+                    <!-- Dark mode toggle removed -->
+                </div>
+            </div>
+        </nav>
+
+        <!-- Onboarding Section -->
+        <section class="perena-onboarding-section">
+            <div class="perena-onboarding-background">
+                <div class="perena-onboarding-pattern"></div>
+            </div>
+            <div class="perena-onboarding-content">
+                <div class="perena-onboarding-card">
+                    <div class="perena-onboarding-header">
+                        <h1 class="perena-onboarding-title">Welcome to Soupie</h1>
+                        <p class="perena-onboarding-subtitle">Let's get to know you better so we can personalize your mental health journey.</p>
+                        
+                        <div class="perena-progress-container">
+                            <div class="perena-progress-bar">
+                                <div class="perena-progress-fill" id="progressFill"></div>
+                            </div>
+                            <div class="perena-progress-text">
+                                <span id="currentStep">1</span> of <span id="totalSteps">12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="perena-onboarding-form-container">
+                        <form id="onboardingForm" class="perena-onboarding-form">
+                            <div id="questionContainer" class="perena-question-container">
+                                <!-- Questions will be dynamically loaded here -->
+                            </div>
+                            
+                            <div class="perena-onboarding-actions">
+                                <button type="button" id="prevBtn" class="perena-btn-secondary" style="display: none;">Previous</button>
+                                <button type="button" id="nextBtn" class="perena-btn-primary">Next</button>
+                                <button type="submit" id="submitBtn" class="perena-btn-primary" style="display: none;">Complete Onboarding</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="alertContainer"></div>
+    </div>
+
+    <script src="/static/js/auth.js"></script>
+    <script src="/static/js/onboarding.js"></script>
+    <script src="/static/js/theme.js"></script>
+</body>
+</html>

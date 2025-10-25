@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soupie - Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Perena-Style Navigation -->
+        <div class="perena-nav">
+            <div class="perena-nav-container">
+                <div class="perena-nav-brand">
+                    <a href="/dashboard" class="perena-logo">Soupie</a>
+                </div>
+                <div class="perena-nav-links">
+                    <a href="/dashboard" class="perena-nav-link active">Dashboard</a>
+                    <a href="/private-journal" class="perena-nav-link">Private Journal</a>
+                    <a href="/open-journal" class="perena-nav-link">Community</a>
+                </div>
+                <div class="perena-nav-actions">
+                    <a href="/profile" class="perena-nav-login">
+                        <span>{{ user_first_name }}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+            <!-- AI Chat Interface -->
+            <div class="chat-container" id="chatContainer">
+                <div class="chat-header">
+                    <h2>What would you like to reflect on today?</h2>
+                </div>
+                
+                <div class="chat-messages" id="chatMessages">
+                    <div class="chat-message ai">
+                        <div class="message-bubble ai">
+                            Hello! I'm here to help you with your mental health journey. You can talk to me about anything, or I can help you access specific features like journaling, mood tracking, or getting insights about your wellness patterns. What's on your mind today?
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input-container">
+                    <form class="chat-input-form" id="chatForm">
+                        <textarea class="chat-input" id="chatInput" placeholder="Type your message here..." rows="1"></textarea>
+                        <button type="submit" class="chat-send-btn" id="chatSendBtn">
+                            <span>→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Date and Summary Section -->
+            <div class="date-summary-section">
+                <div class="date-selector">
+                    <div class="current-date">
+                        <span class="date-text">Loading...</span>
+                        <div class="week-days">
+                            <div class="day-btn active">S</div>
+                            <div class="day-btn">M</div>
+                            <div class="day-btn">T</div>
+                            <div class="day-btn">W</div>
+                            <div class="day-btn">T</div>
+                            <div class="day-btn">F</div>
+                            <div class="day-btn">S</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="summary-cards">
+                    <div class="summary-card">
+                        <div class="summary-label">Streak</div>
+                        <div class="summary-value">0</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-label">Entries</div>
+                        <div class="summary-value">0</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-label">Mood</div>
+                        <div class="summary-value" id="todayMood">—</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Daily Journaling Section -->
+            <div class="journaling-section">
+                <h2 class="section-title">DAILY JOURNALING</h2>
+                <div class="journaling-cards">
+                    <div class="journal-card primary">
+                        <div class="card-tag">Daily check-in</div>
+                        <h3 class="card-title">Evening Reflection</h3>
+                        <p class="card-description">How was your day? Take a moment to reflect on your experiences and emotions.</p>
+                        <a href="/private-journal" class="card-action-btn primary">
+                            <span class="btn-icon">✍️</span>
+                            <span class="btn-text">Check in now</span>
+                        </a>
+                        <div class="card-illustration">🌙</div>
+                    </div>
+                    
+                    <div class="journal-card secondary">
+                        <div class="card-icon">📚</div>
+                        <h3 class="card-title">Discover more guided journals</h3>
+                        <p class="card-description">Explore personalized prompts and guided journaling exercises.</p>
+                        <button class="card-action-btn secondary" data-feature="tips-advice">
+                            <span class="btn-text">Explore →</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Wellness Tracking Section -->
+            <div class="wellness-section">
+                <h2 class="section-title">WELLNESS TRACKING</h2>
+                <div class="wellness-card">
+                    <div class="wellness-content">
+                        <h3 class="wellness-title">Track your mental wellness journey</h3>
+                        <p class="wellness-description">Monitor your mood patterns, emotional states, and progress toward your wellness goals.</p>
+                        <div class="wellness-actions">
+                            <button class="wellness-btn" data-feature="mood-tracker">
+                                <span class="btn-icon">😊</span>
+                                <span class="btn-text">+ Track mood</span>
+                            </button>
+                            <button class="wellness-btn" data-feature="weekly-progress">
+                                <span class="btn-icon">📊</span>
+                                <span class="btn-text">View progress</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- Feature Content Area -->
+        <div class="feature-content" id="featureContent">
+            <div class="feature-content-header">
+                <button class="back-to-chat-btn" id="backToChatBtn">← Back to Chat</button>
+                <h2 id="featureTitle">Feature</h2>
+            </div>
+            <div id="featureBody">
+                <!-- Feature content will be loaded here -->
+            </div>
+        </div>
+
+            <div id="alertContainer"></div>
+        </div>
+
+    <script src="/static/js/dashboard.js"></script>
+    <script src="/static/js/auth.js"></script>
+    <script src="/static/js/theme.js"></script>
+</body>
+</html>
+

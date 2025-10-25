@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soupie - Community</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="community-container">
+        <!-- Perena-Style Navigation -->
+        <div class="perena-nav">
+            <div class="perena-nav-container">
+                <div class="perena-nav-brand">
+                    <a href="/dashboard" class="perena-logo">Soupie</a>
+                </div>
+                <div class="perena-nav-links">
+                    <a href="/dashboard" class="perena-nav-link">Dashboard</a>
+                    <a href="/private-journal" class="perena-nav-link">Private Journal</a>
+                    <a href="/open-journal" class="perena-nav-link active">Community</a>
+                </div>
+                <div class="perena-nav-actions">
+                    <a href="/profile" class="perena-nav-login">
+                        <span>{{ user_first_name }}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Content -->
+        <div class="community-content">
+            <div class="community-background">
+                <div class="community-pattern"></div>
+            </div>
+            
+            <div class="community-main">
+                <!-- Community Header -->
+                <div class="community-header">
+                    <h1 class="community-title">Community Journal</h1>
+                    <p class="community-subtitle">Share your thoughts and connect with others in a supportive space</p>
+                </div>
+
+                <!-- Share Post Card -->
+                <div class="community-card share-post">
+                    <div class="card-header">
+                        <h2 class="card-title">Share with Community</h2>
+                        <p class="card-description">Your thoughts are completely anonymous and safe</p>
+                    </div>
+                    
+                    <form id="openJournalForm" class="community-form">
+                        <div class="form-group">
+                            <label for="openJournalContent" class="form-label">What's on your mind?</label>
+                            <textarea 
+                                id="openJournalContent" 
+                                name="content" 
+                                class="community-textarea" 
+                                placeholder="Share your thoughts, experiences, or feelings with the community..."
+                                required
+                            ></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group emotion-group">
+                                <label for="emotionTag" class="form-label">How are you feeling?</label>
+                                <select id="emotionTag" name="emotion_tag" class="emotion-select">
+                                    <option value="">Choose an emotion</option>
+                                    <option value="happy">😊 Happy</option>
+                                    <option value="sad">😢 Sad</option>
+                                    <option value="anxious">😰 Anxious</option>
+                                    <option value="angry">😠 Angry</option>
+                                    <option value="grateful">🙏 Grateful</option>
+                                    <option value="confused">😕 Confused</option>
+                                    <option value="hopeful">🌟 Hopeful</option>
+                                    <option value="lonely">😔 Lonely</option>
+                                    <option value="excited">🎉 Excited</option>
+                                    <option value="peaceful">☮️ Peaceful</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn-primary">
+                                    <span id="shareText">Share Post</span>
+                                    <span id="shareLoading" class="loading hidden"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Community Feed Card -->
+                <div class="community-card feed">
+                    <div class="card-header">
+                        <h2 class="card-title">Community Feed</h2>
+                        <p class="card-description">Read and connect with others' experiences</p>
+                        <button id="refreshFeed" class="refresh-btn">
+                            <span>🔄</span>
+                            <span>Refresh</span>
+                        </button>
+                    </div>
+                    
+                    <div id="communityPosts" class="posts-container">
+                        <div class="loading-state">
+                            <div class="loading-spinner"></div>
+                            <p>Loading community posts...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="alertContainer"></div>
+    </div>
+
+    <script src="/static/js/open-journal.js"></script>
+    <script src="/static/js/theme.js"></script>
+</body>
+</html>

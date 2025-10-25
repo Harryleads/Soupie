@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soupie - Get Started</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="perena-register-container">
+        <!-- Perena Navigation -->
+        <nav class="perena-nav">
+            <div class="perena-nav-container">
+                <div class="perena-nav-brand">
+                    <a href="/" class="perena-logo">Soupie</a>
+                </div>
+                <div class="perena-nav-links">
+                    <a href="/" class="perena-nav-link">Home</a>
+                    <a href="#features" class="perena-nav-link">Features</a>
+                    <a href="#about" class="perena-nav-link">About</a>
+                </div>
+                <div class="perena-nav-actions">
+                    <a href="/login" class="perena-nav-login">Sign In</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Registration Section -->
+        <section class="perena-register-section">
+            <div class="perena-register-background">
+                <div class="perena-register-pattern"></div>
+            </div>
+            <div class="perena-register-content">
+                <div class="perena-register-card">
+                    <div class="perena-register-header">
+                        <h1 class="perena-register-title">Get Started</h1>
+                        <p class="perena-register-subtitle">Start your mental health journey with AI-powered insights and personalized support.</p>
+                    </div>
+                    
+                    <form id="registerForm" class="perena-register-form">
+                        <div class="perena-form-row">
+                            <div class="perena-form-group">
+                                <label for="first_name" class="perena-form-label">First Name</label>
+                                <input type="text" id="first_name" name="first_name" class="perena-form-input" required>
+                            </div>
+                            
+                            <div class="perena-form-group">
+                                <label for="last_name" class="perena-form-label">Last Name</label>
+                                <input type="text" id="last_name" name="last_name" class="perena-form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="perena-form-group">
+                            <label for="email" class="perena-form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="perena-form-input" required>
+                        </div>
+                        
+                        <div class="perena-form-group">
+                            <label for="phone" class="perena-form-label">Phone Number <span class="perena-optional">(Optional)</span></label>
+                            <input type="tel" id="phone" name="phone" class="perena-form-input">
+                        </div>
+                        
+                        <div class="perena-form-row">
+                            <div class="perena-form-group">
+                                <label for="password" class="perena-form-label">Password</label>
+                                <input type="password" id="password" name="password" class="perena-form-input" required minlength="6">
+                            </div>
+                            
+                            <div class="perena-form-group">
+                                <label for="confirm_password" class="perena-form-label">Confirm Password</label>
+                                <input type="password" id="confirm_password" name="confirm_password" class="perena-form-input" required>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="perena-register-btn">
+                            <span id="registerText">Create Account</span>
+                            <span id="registerLoading" class="perena-loading hidden"></span>
+                        </button>
+                    </form>
+                    
+                    <div id="alertContainer"></div>
+                    
+                    <div class="perena-register-footer">
+                        <p class="perena-register-text">
+                            Already have an account? 
+                            <a href="/login" class="perena-register-link">Sign in here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/static/js/register.js"></script>
+    <script src="/static/js/theme.js"></script>
+</body>
+</html>

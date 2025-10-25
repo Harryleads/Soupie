@@ -1,0 +1,745 @@
+[
+  {
+    "user_id": "d6e82eda-809c-4461-b05e-7917996872a7",
+    "onboarding_level": "balanced",
+    "tier_1_demographics": {
+      "employment_status": "student",
+      "living_situation": "alone",
+      "therapy_history": {
+        "previous_therapy": "never",
+        "therapy_type": "no"
+      }
+    },
+    "tier_2_emotional_state": {
+      "primary_affect": "okay",
+      "emotion_description": null,
+      "affect_confidence": "comes_and_goes",
+      "emotion_intensity": "medium",
+      "mood_trend_start": "7pm on workdays, 10 pm on holidays "
+    },
+    "tier_3_cognitive_themes": {
+      "belief_safety_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_trust_negative": {
+        "present": true,
+        "confidence": "medium"
+      },
+      "belief_control_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_self_low": {
+        "present": true,
+        "confidence": "medium"
+      },
+      "belief_intimacy_low": {
+        "present": true,
+        "confidence": "medium"
+      }
+    },
+    "tier_4_functional_impact": {
+      "sleep_quality": "not_great",
+      "energy_level": "medium",
+      "focus_level": "a_bit_off",
+      "social_withdrawal": "no",
+      "appetite_change": "normal"
+    },
+    "tier_5_risk_and_protective_factors": {
+      "protective_factors": {
+        "social_support": "maybe_one_or_two",
+        "coping_skills": [
+          "music",
+          "journaling",
+          "breathing_exercises"
+        ],
+        "purposeful_activities": "my goal to create impact on this world "
+      },
+      "risk_factors": {
+        "recent_trauma": true,
+        "suicidal_thoughts": false
+      }
+    },
+    "tier_7_ai_summary_card": {
+      "personalization_goal": "energy"
+    },
+    "tier_8_temporal_tracking": {
+      "mood_trend_start": "7pm on workdays, 10 pm on holidays "
+    },
+    "next_module": "mood_tracking",
+    "metadata": {
+      "reviewed_by_clinician": false,
+      "created_at": "2025-10-23T01:28:49.353843"
+    },
+    "id": "97b9f003-99bc-4637-90d1-ab351b665aac",
+    "created_at": "2025-10-23T01:28:49.353843"
+  },
+  {
+    "user_id": "3f5c53ca-15b8-42bb-b1cc-972dd6bc4315",
+    "onboarding_level": "balanced",
+    "tier_1_demographics": {
+      "employment_status": "self_employed",
+      "living_situation": "alone",
+      "therapy_history": {
+        "previous_therapy": "never",
+        "therapy_type": "no"
+      }
+    },
+    "tier_2_emotional_state": {
+      "primary_affect": "other",
+      "emotion_description": null,
+      "affect_confidence": null,
+      "emotion_intensity": "medium",
+      "mood_trend_start": null
+    },
+    "tier_3_cognitive_themes": {
+      "belief_safety_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_trust_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_control_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_self_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_intimacy_low": {
+        "present": false,
+        "confidence": "medium"
+      }
+    },
+    "tier_4_functional_impact": {
+      "sleep_quality": null,
+      "energy_level": null,
+      "focus_level": null,
+      "social_withdrawal": null,
+      "appetite_change": null
+    },
+    "tier_5_risk_and_protective_factors": {
+      "protective_factors": {
+        "social_support": null,
+        "coping_skills": [
+          "skip"
+        ],
+        "purposeful_activities": null
+      },
+      "risk_factors": {
+        "recent_trauma": false,
+        "suicidal_thoughts": false
+      }
+    },
+    "tier_7_ai_summary_card": {
+      "personalization_goal": null
+    },
+    "tier_8_temporal_tracking": {
+      "mood_trend_start": null
+    },
+    "next_module": "just_chat",
+    "metadata": {
+      "reviewed_by_clinician": false,
+      "created_at": "2025-10-23T10:32:20.132028"
+    },
+    "insights": {
+      "mental_health_index": 57.0,
+      "cluster_primary": "cluster_resilient",
+      "cluster_confidence": 0.42,
+      "domain_scores": {
+        "mood_stability": 60.0,
+        "energy_function": 59.99999999999999,
+        "social_engagement": 60.0,
+        "cognitive_flexibility": 60.0,
+        "protective_strength": 40.0
+      },
+      "risk_flags": {
+        "suicide_flag": false,
+        "acute_risk_flag": false,
+        "moderate_flag": false,
+        "low_flag": false,
+        "priority_level": "stable"
+      },
+      "summary_text": "You have strong coping skills and support systems. Keep nurturing these relationships and practices that help you thrive.",
+      "emergency_mode": false,
+      "processed_at": "2025-10-23T10:32:20.988044"
+    },
+    "id": "c9161854-8bc4-4e33-95ab-e40de1502534",
+    "created_at": "2025-10-23T10:32:20.988044"
+  },
+  {
+    "user_id": "d4c38cf2-288d-4ce0-8f0d-3a544a581ea1",
+    "onboarding_level": "balanced",
+    "tier_1_demographics": {
+      "employment_status": "other",
+      "living_situation": "with_family",
+      "therapy_history": {
+        "previous_therapy": "never",
+        "therapy_type": null
+      }
+    },
+    "tier_2_emotional_state": {
+      "primary_affect": null,
+      "emotion_description": null,
+      "affect_confidence": null,
+      "emotion_intensity": "medium",
+      "mood_trend_start": null
+    },
+    "tier_3_cognitive_themes": {
+      "belief_safety_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_trust_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_control_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_self_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_intimacy_low": {
+        "present": false,
+        "confidence": "medium"
+      }
+    },
+    "tier_4_functional_impact": {
+      "sleep_quality": null,
+      "energy_level": null,
+      "focus_level": null,
+      "social_withdrawal": null,
+      "appetite_change": null
+    },
+    "tier_5_risk_and_protective_factors": {
+      "protective_factors": {
+        "social_support": null,
+        "coping_skills": [],
+        "purposeful_activities": null
+      },
+      "risk_factors": {
+        "recent_trauma": false,
+        "suicidal_thoughts": false
+      }
+    },
+    "tier_7_ai_summary_card": {
+      "personalization_goal": null
+    },
+    "tier_8_temporal_tracking": {
+      "mood_trend_start": null
+    },
+    "next_module": "just_chat",
+    "metadata": {
+      "reviewed_by_clinician": false,
+      "created_at": "2025-10-23T11:30:00.494349"
+    },
+    "insights": {
+      "mental_health_index": 60.0,
+      "cluster_primary": "cluster_resilient",
+      "cluster_confidence": 0.6,
+      "domain_scores": {
+        "mood_stability": 60.0,
+        "energy_function": 59.99999999999999,
+        "social_engagement": 60.0,
+        "cognitive_flexibility": 60.0,
+        "protective_strength": 60.0
+      },
+      "risk_flags": {
+        "suicide_flag": false,
+        "acute_risk_flag": false,
+        "moderate_flag": false,
+        "low_flag": false,
+        "priority_level": "stable"
+      },
+      "summary_text": "You have strong coping skills and support systems. Keep nurturing these relationships and practices that help you thrive.",
+      "emergency_mode": false,
+      "processed_at": "2025-10-23T11:30:00.735330"
+    },
+    "id": "45d2231a-f02e-4d3f-b9e2-98b9b1355f1e",
+    "created_at": "2025-10-23T11:30:00.740320"
+  },
+  {
+    "user_id": "d4c38cf2-288d-4ce0-8f0d-3a544a581ea1",
+    "onboarding_level": "balanced",
+    "tier_1_demographics": {
+      "employment_status": null,
+      "living_situation": null,
+      "therapy_history": {
+        "previous_therapy": null,
+        "therapy_type": null
+      }
+    },
+    "tier_2_emotional_state": {
+      "primary_affect": null,
+      "emotion_description": null,
+      "affect_confidence": null,
+      "emotion_intensity": "medium",
+      "mood_trend_start": null
+    },
+    "tier_3_cognitive_themes": {
+      "belief_safety_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_trust_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_control_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_self_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_intimacy_low": {
+        "present": false,
+        "confidence": "medium"
+      }
+    },
+    "tier_4_functional_impact": {
+      "sleep_quality": null,
+      "energy_level": null,
+      "focus_level": null,
+      "social_withdrawal": null,
+      "appetite_change": null
+    },
+    "tier_5_risk_and_protective_factors": {
+      "protective_factors": {
+        "social_support": null,
+        "coping_skills": [],
+        "purposeful_activities": null
+      },
+      "risk_factors": {
+        "recent_trauma": false,
+        "suicidal_thoughts": false
+      }
+    },
+    "tier_7_ai_summary_card": {
+      "personalization_goal": null
+    },
+    "tier_8_temporal_tracking": {
+      "mood_trend_start": null
+    },
+    "next_module": "just_chat",
+    "metadata": {
+      "reviewed_by_clinician": false,
+      "created_at": "2025-10-23T11:30:01.242466"
+    },
+    "insights": {
+      "mental_health_index": 60.0,
+      "cluster_primary": "cluster_resilient",
+      "cluster_confidence": 0.6,
+      "domain_scores": {
+        "mood_stability": 60.0,
+        "energy_function": 59.99999999999999,
+        "social_engagement": 60.0,
+        "cognitive_flexibility": 60.0,
+        "protective_strength": 60.0
+      },
+      "risk_flags": {
+        "suicide_flag": false,
+        "acute_risk_flag": false,
+        "moderate_flag": false,
+        "low_flag": false,
+        "priority_level": "stable"
+      },
+      "summary_text": "You have strong coping skills and support systems. Keep nurturing these relationships and practices that help you thrive.",
+      "emergency_mode": false,
+      "processed_at": "2025-10-23T11:30:02.036444"
+    },
+    "id": "b84e331e-26d4-44c9-b2e9-cb01e9553458",
+    "created_at": "2025-10-23T11:30:02.036444"
+  },
+  {
+    "user_id": "d4c38cf2-288d-4ce0-8f0d-3a544a581ea1",
+    "onboarding_level": "balanced",
+    "tier_1_demographics": {
+      "employment_status": null,
+      "living_situation": null,
+      "therapy_history": {
+        "previous_therapy": null,
+        "therapy_type": null
+      }
+    },
+    "tier_2_emotional_state": {
+      "primary_affect": null,
+      "emotion_description": null,
+      "affect_confidence": null,
+      "emotion_intensity": "medium",
+      "mood_trend_start": null
+    },
+    "tier_3_cognitive_themes": {
+      "belief_safety_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_trust_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_control_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_self_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_intimacy_low": {
+        "present": false,
+        "confidence": "medium"
+      }
+    },
+    "tier_4_functional_impact": {
+      "sleep_quality": null,
+      "energy_level": null,
+      "focus_level": null,
+      "social_withdrawal": null,
+      "appetite_change": null
+    },
+    "tier_5_risk_and_protective_factors": {
+      "protective_factors": {
+        "social_support": null,
+        "coping_skills": [],
+        "purposeful_activities": null
+      },
+      "risk_factors": {
+        "recent_trauma": false,
+        "suicidal_thoughts": false
+      }
+    },
+    "tier_7_ai_summary_card": {
+      "personalization_goal": null
+    },
+    "tier_8_temporal_tracking": {
+      "mood_trend_start": null
+    },
+    "next_module": "just_chat",
+    "metadata": {
+      "reviewed_by_clinician": false,
+      "created_at": "2025-10-23T11:30:02.034437"
+    },
+    "insights": {
+      "mental_health_index": 60.0,
+      "cluster_primary": "cluster_resilient",
+      "cluster_confidence": 0.6,
+      "domain_scores": {
+        "mood_stability": 60.0,
+        "energy_function": 59.99999999999999,
+        "social_engagement": 60.0,
+        "cognitive_flexibility": 60.0,
+        "protective_strength": 60.0
+      },
+      "risk_flags": {
+        "suicide_flag": false,
+        "acute_risk_flag": false,
+        "moderate_flag": false,
+        "low_flag": false,
+        "priority_level": "stable"
+      },
+      "summary_text": "You have strong coping skills and support systems. Keep nurturing these relationships and practices that help you thrive.",
+      "emergency_mode": false,
+      "processed_at": "2025-10-23T11:30:02.235831"
+    },
+    "id": "b2ae5baf-ebc4-4612-af2e-594a9a40bcc7",
+    "created_at": "2025-10-23T11:30:02.235831"
+  },
+  {
+    "user_id": "d4c38cf2-288d-4ce0-8f0d-3a544a581ea1",
+    "onboarding_level": "balanced",
+    "tier_1_demographics": {
+      "employment_status": null,
+      "living_situation": null,
+      "therapy_history": {
+        "previous_therapy": null,
+        "therapy_type": null
+      }
+    },
+    "tier_2_emotional_state": {
+      "primary_affect": null,
+      "emotion_description": null,
+      "affect_confidence": null,
+      "emotion_intensity": "medium",
+      "mood_trend_start": null
+    },
+    "tier_3_cognitive_themes": {
+      "belief_safety_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_trust_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_control_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_self_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_intimacy_low": {
+        "present": false,
+        "confidence": "medium"
+      }
+    },
+    "tier_4_functional_impact": {
+      "sleep_quality": null,
+      "energy_level": null,
+      "focus_level": null,
+      "social_withdrawal": null,
+      "appetite_change": null
+    },
+    "tier_5_risk_and_protective_factors": {
+      "protective_factors": {
+        "social_support": null,
+        "coping_skills": [],
+        "purposeful_activities": null
+      },
+      "risk_factors": {
+        "recent_trauma": false,
+        "suicidal_thoughts": false
+      }
+    },
+    "tier_7_ai_summary_card": {
+      "personalization_goal": null
+    },
+    "tier_8_temporal_tracking": {
+      "mood_trend_start": null
+    },
+    "next_module": "just_chat",
+    "metadata": {
+      "reviewed_by_clinician": false,
+      "created_at": "2025-10-23T11:30:14.320436"
+    },
+    "insights": {
+      "mental_health_index": 55.5,
+      "cluster_primary": "cluster_affective_low",
+      "cluster_confidence": 0.4,
+      "domain_scores": {
+        "mood_stability": 60.0,
+        "energy_function": 59.99999999999999,
+        "social_engagement": 60.0,
+        "cognitive_flexibility": 60.0,
+        "protective_strength": 30.0
+      },
+      "risk_flags": {
+        "suicide_flag": false,
+        "acute_risk_flag": false,
+        "moderate_flag": false,
+        "low_flag": false,
+        "priority_level": "stable"
+      },
+      "summary_text": "You've been feeling low energy and emotionally fatigued. Journaling and short breaks may help balance your energy over the week.",
+      "emergency_mode": false,
+      "processed_at": "2025-10-23T11:30:14.511871"
+    },
+    "id": "6cb0d1e8-7a9c-4fa8-9b33-0700283ebea4",
+    "created_at": "2025-10-23T11:30:14.511871"
+  },
+  {
+    "user_id": "6cd4fda4-907b-4aa3-84a3-38d413726ad7",
+    "onboarding_level": "balanced",
+    "tier_1_demographics": {
+      "employment_status": "student",
+      "living_situation": "with_family",
+      "therapy_history": {
+        "previous_therapy": "currently",
+        "therapy_type": "no"
+      }
+    },
+    "tier_2_emotional_state": {
+      "primary_affect": "tired",
+      "emotion_description": null,
+      "affect_confidence": "comes_and_goes",
+      "emotion_intensity": "medium",
+      "mood_trend_start": "boring"
+    },
+    "tier_3_cognitive_themes": {
+      "belief_safety_negative": {
+        "present": true,
+        "confidence": "medium"
+      },
+      "belief_trust_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_control_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_self_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_intimacy_low": {
+        "present": false,
+        "confidence": "medium"
+      }
+    },
+    "tier_4_functional_impact": {
+      "sleep_quality": "average",
+      "energy_level": "high",
+      "focus_level": "very_hard",
+      "social_withdrawal": "no",
+      "appetite_change": "more"
+    },
+    "tier_5_risk_and_protective_factors": {
+      "protective_factors": {
+        "social_support": "maybe_one_or_two",
+        "coping_skills": [
+          "music",
+          "journaling",
+          "talking_to_someone"
+        ],
+        "purposeful_activities": "work"
+      },
+      "risk_factors": {
+        "recent_trauma": false,
+        "suicidal_thoughts": true
+      }
+    },
+    "tier_7_ai_summary_card": {
+      "personalization_goal": "energy"
+    },
+    "tier_8_temporal_tracking": {
+      "mood_trend_start": "boring"
+    },
+    "next_module": "daily_reflections",
+    "metadata": {
+      "reviewed_by_clinician": false,
+      "created_at": "2025-10-24T20:29:11.340329"
+    },
+    "insights": {
+      "mental_health_index": 76.6,
+      "cluster_primary": "cluster_resilient",
+      "cluster_confidence": 0.6,
+      "domain_scores": {
+        "mood_stability": 53.33333333333333,
+        "energy_function": 71.52542372881356,
+        "social_engagement": 100.0,
+        "cognitive_flexibility": 100.0,
+        "protective_strength": 60.0
+      },
+      "risk_flags": {
+        "suicide_flag": true,
+        "acute_risk_flag": false,
+        "moderate_flag": false,
+        "low_flag": false,
+        "priority_level": "emergency"
+      },
+      "summary_text": "Hey, I'm so glad you shared this with me. It sounds like you've got incredible strengths, especially when it comes to connecting with others and staying open-minded. It's also clear you're going through a really tough time right now, so let's focus on getting you the immediate support you need while also thinking about how we can build up those support systems in the long run.\n",
+      "emergency_mode": true,
+      "processed_at": "2025-10-24T20:29:14.048857"
+    },
+    "id": "b09e3162-9b0d-4f51-93d0-dea26622c1a8",
+    "created_at": "2025-10-24T20:29:14.048857"
+  },
+  {
+    "user_id": "30fa52ea-c36e-4cef-99c2-fe3eab779871",
+    "onboarding_level": "light",
+    "tier_1_demographics": {
+      "employment_status": "working_fulltime",
+      "living_situation": "with_roommates",
+      "therapy_history": {
+        "previous_therapy": null,
+        "therapy_type": null
+      }
+    },
+    "tier_2_emotional_state": {
+      "primary_affect": null,
+      "emotion_description": null,
+      "affect_confidence": null,
+      "emotion_intensity": "medium",
+      "mood_trend_start": null
+    },
+    "tier_3_cognitive_themes": {
+      "belief_safety_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_trust_negative": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_control_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_self_low": {
+        "present": false,
+        "confidence": "medium"
+      },
+      "belief_intimacy_low": {
+        "present": false,
+        "confidence": "medium"
+      }
+    },
+    "tier_4_functional_impact": {
+      "sleep_quality": null,
+      "energy_level": null,
+      "focus_level": null,
+      "social_withdrawal": null,
+      "appetite_change": null
+    },
+    "tier_5_risk_and_protective_factors": {
+      "protective_factors": {
+        "social_support": null,
+        "coping_skills": [
+          "nothing_helps",
+          "skip"
+        ],
+        "purposeful_activities": null
+      },
+      "risk_factors": {
+        "recent_trauma": false,
+        "suicidal_thoughts": false
+      }
+    },
+    "tier_7_ai_summary_card": {
+      "personalization_goal": "joy"
+    },
+    "tier_8_temporal_tracking": {
+      "mood_trend_start": null
+    },
+    "next_module": "just_chat",
+    "metadata": {
+      "reviewed_by_clinician": false,
+      "created_at": "2025-10-25T00:34:22.012549"
+    },
+    "insights": {
+      "mental_health_index": 58.5,
+      "cluster_primary": "cluster_resilient",
+      "cluster_confidence": 0.51,
+      "domain_scores": {
+        "mood_stability": 60.0,
+        "energy_function": 59.99999999999999,
+        "social_engagement": 60.0,
+        "cognitive_flexibility": 60.0,
+        "protective_strength": 50.0
+      },
+      "risk_flags": {
+        "suicide_flag": false,
+        "acute_risk_flag": false,
+        "moderate_flag": false,
+        "low_flag": false,
+        "priority_level": "stable"
+      },
+      "summary_text": "Hey, I'm so glad to see you're in a stable place right now. It sounds like you're doing a lot of things right, and I know you've worked hard to get here - maybe leaning into those support systems a little more could give you an extra boost as you keep moving forward.\n",
+      "emergency_mode": false,
+      "processed_at": "2025-10-25T00:34:24.080772"
+    },
+    "id": "79734abc-a7c0-46aa-8aae-40fe521ddcbc",
+    "created_at": "2025-10-25T00:34:24.080772"
+  }
+]
