@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🧠 Talksoup - Quick Start Setup"
+echo "🧠 Soupie - Quick Start Setup"
 echo "=============================="
 
 # Check if Python is installed

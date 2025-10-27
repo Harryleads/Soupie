@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    function formatTalksoupResponse(text) {
+    function formatSoupieResponse(text) {
         console.log('Original text:', text); // Debug log
         
         if (!text) return '';
@@ -70,14 +70,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="journal-content">${entry.content}</div>
                 ${entry.ai_summary ? `
                     <div class="soupie-thoughts">
-                        <strong>What Talksoup thinks:</strong>
+                        <strong>What Soupie thinks:</strong>
                         <div class="soupie-content" id="soupie-content-${entry.id}"></div>
                     </div>
                 ` : ''}
                 <div class="journal-meta">
                     <span>${formatDate(entry.created_at)}</span>
                     <button onclick="generateSummary('${entry.id}')" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
-                        ${entry.ai_summary ? 'Regenerate Talksoup\'s thoughts' : 'What does Talksoup think?'}
+                        ${entry.ai_summary ? 'Regenerate Soupie\'s thoughts' : 'What does Soupie think?'}
                     </button>
                 </div>
             </div>
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('Processing entry:', entry.id, 'with summary:', entry.ai_summary);
                 const contentDiv = document.getElementById(`soupie-content-${entry.id}`);
                 if (contentDiv) {
-                    const formatted = formatTalksoupResponse(entry.ai_summary);
+                    const formatted = formatSoupieResponse(entry.ai_summary);
                     console.log('Setting innerHTML to:', formatted);
                     contentDiv.innerHTML = formatted;
                 } else {
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const data = await response.json();
             
             if (response.ok) {
-                showAlert('Talksoup\'s thoughts generated successfully!', 'success');
+                showAlert('Soupie\'s thoughts generated successfully!', 'success');
                 loadJournalEntries(); // Reload to show the summary
             } else {
                 showAlert(data.error || 'Failed to generate summary');
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Test function for debugging
     window.testFormatting = function() {
         const testText = '**Test Bold** and **Key Insight:** test content';
-        const result = formatTalksoupResponse(testText);
+        const result = formatSoupieResponse(testText);
         console.log('Test formatting result:', result);
         
         // Create a test div to see the result

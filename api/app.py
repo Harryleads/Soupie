@@ -48,7 +48,7 @@ def call_gemini(prompt):
 # Health check endpoint
 @app.route('/api/health')
 def health_check():
-    return jsonify({"status": "healthy", "message": "Talksoup API is running"})
+    return jsonify({"status": "healthy", "message": "Soupie API is running"})
 
 # Authentication endpoints
 @app.route('/api/register', methods=['POST'])
